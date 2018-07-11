@@ -12,6 +12,7 @@ struct SongModel:Codable, Equatable {
     var artworkUrl100:String?
     var collectionName:String?
     var artistName:String?
+    var trackName:String?
     var kind:String?
     var trackId:Int?
     

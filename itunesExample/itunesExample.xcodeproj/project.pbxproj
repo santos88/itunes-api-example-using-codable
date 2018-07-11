@@ -13,13 +13,14 @@
 		D64A264720F574190019769F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64A264520F574190019769F /* LaunchScreen.storyboard */; };
 		D64A265220F574190019769F /* itunesExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A265120F574190019769F /* itunesExampleTests.swift */; };
 		D64A266020F578FF0019769F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A265F20F578FF0019769F /* SearchViewController.swift */; };
-		D64A266220F579120019769F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266120F579120019769F /* ResultViewController.swift */; };
+		D64A266220F579120019769F /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266120F579120019769F /* SongViewController.swift */; };
 		D64A266420F579280019769F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266320F579280019769F /* SearchController.swift */; };
 		D64A266520F5792A0019769F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266320F579280019769F /* SearchController.swift */; };
 		D64A266720F579780019769F /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* SongModel.swift */; };
 		D64A266820F579780019769F /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* SongModel.swift */; };
 		D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
 		D64A266C20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
+		D64A266E20F58F050019769F /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266D20F58F050019769F /* SongTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +44,11 @@
 		D64A265120F574190019769F /* itunesExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesExampleTests.swift; sourceTree = "<group>"; };
 		D64A265320F574190019769F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64A265F20F578FF0019769F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D64A266120F579120019769F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D64A266120F579120019769F /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		D64A266320F579280019769F /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		D64A266620F579780019769F /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		D64A266A20F5799E0019769F /* SongsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsAPI.swift; sourceTree = "<group>"; };
+		D64A266D20F58F050019769F /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				D64A265F20F578FF0019769F /* SearchViewController.swift */,
-				D64A266120F579120019769F /* ResultViewController.swift */,
+				D64A266120F579120019769F /* SongViewController.swift */,
+				D64A266D20F58F050019769F /* SongTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,9 +250,10 @@
 				D64A266020F578FF0019769F /* SearchViewController.swift in Sources */,
 				D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */,
 				D64A266420F579280019769F /* SearchController.swift in Sources */,
+				D64A266E20F58F050019769F /* SongTableViewCell.swift in Sources */,
 				D64A266720F579780019769F /* SongModel.swift in Sources */,
 				D64A263D20F574180019769F /* AppDelegate.swift in Sources */,
-				D64A266220F579120019769F /* ResultViewController.swift in Sources */,
+				D64A266220F579120019769F /* SongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
