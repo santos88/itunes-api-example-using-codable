@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class SearchController {
+    
+    var cache = [String : [SongModel]]()
+    
+    func loadArticles(keyword:String, completion: @escaping ([SongModel]?, Error?) -> Void) {
+        if cache.keys.contains(keyword) {
+            completion(cache[keyword], nil)
+        }
+            
+        SongsAPI().searchSong(keyword: keyword) { [weak self] (songs, error) in
+            if let songs = songs {
+                self?.cache[keyword] = songs
+            }
+            completion(songs, error)
+        }
+    }
+    
+    func cleanCache() {
+        cache.removeAll()
+    }
+}
