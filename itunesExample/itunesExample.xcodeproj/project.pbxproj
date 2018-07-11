@@ -16,10 +16,10 @@
 		D64A266220F579120019769F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266120F579120019769F /* ResultViewController.swift */; };
 		D64A266420F579280019769F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266320F579280019769F /* SearchController.swift */; };
 		D64A266520F5792A0019769F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266320F579280019769F /* SearchController.swift */; };
-		D64A266720F579780019769F /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* MediaModel.swift */; };
-		D64A266820F579780019769F /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* MediaModel.swift */; };
-		D64A266B20F5799E0019769F /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* MediaAPI.swift */; };
-		D64A266C20F5799E0019769F /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* MediaAPI.swift */; };
+		D64A266720F579780019769F /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* SongModel.swift */; };
+		D64A266820F579780019769F /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266620F579780019769F /* SongModel.swift */; };
+		D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
+		D64A266C20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		D64A265F20F578FF0019769F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D64A266120F579120019769F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D64A266320F579280019769F /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
-		D64A266620F579780019769F /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
-		D64A266A20F5799E0019769F /* MediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAPI.swift; sourceTree = "<group>"; };
+		D64A266620F579780019769F /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		D64A266A20F5799E0019769F /* SongsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		D64A265C20F574220019769F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D64A266620F579780019769F /* MediaModel.swift */,
+				D64A266620F579780019769F /* SongModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 		D64A266920F5797F0019769F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				D64A266A20F5799E0019769F /* MediaAPI.swift */,
+				D64A266A20F5799E0019769F /* SongsAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64A266020F578FF0019769F /* SearchViewController.swift in Sources */,
-				D64A266B20F5799E0019769F /* MediaAPI.swift in Sources */,
+				D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */,
 				D64A266420F579280019769F /* SearchController.swift in Sources */,
-				D64A266720F579780019769F /* MediaModel.swift in Sources */,
+				D64A266720F579780019769F /* SongModel.swift in Sources */,
 				D64A263D20F574180019769F /* AppDelegate.swift in Sources */,
 				D64A266220F579120019769F /* ResultViewController.swift in Sources */,
 			);
@@ -259,8 +259,8 @@
 			files = (
 				D64A265220F574190019769F /* itunesExampleTests.swift in Sources */,
 				D64A266520F5792A0019769F /* SearchController.swift in Sources */,
-				D64A266820F579780019769F /* MediaModel.swift in Sources */,
-				D64A266C20F5799E0019769F /* MediaAPI.swift in Sources */,
+				D64A266820F579780019769F /* SongModel.swift in Sources */,
+				D64A266C20F5799E0019769F /* SongsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
