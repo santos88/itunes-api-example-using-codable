@@ -144,9 +144,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMP-Jc-uLT">
-                                <rect key="frame" x="16" y="245" width="60" height="30"/>
+                                <rect key="frame" x="16" y="245" width="343" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="6MM-VJ-3ys"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="6MM-VJ-3ys"/>
                                     <constraint firstAttribute="height" constant="30" id="lA3-ym-iDa"/>
                                 </constraints>
                                 <state key="normal" title="Preview"/>
@@ -167,6 +167,7 @@
                             <constraint firstItem="i4D-Mw-99K" firstAttribute="trailing" secondItem="oBc-DW-gLY" secondAttribute="trailing" constant="16" id="5m6-VA-9fF"/>
                             <constraint firstItem="i4D-Mw-99K" firstAttribute="trailing" secondItem="zah-gj-zWS" secondAttribute="trailing" constant="16" id="OP5-MN-9MU"/>
                             <constraint firstItem="NpF-ir-Mva" firstAttribute="top" secondItem="i4D-Mw-99K" secondAttribute="top" constant="30" id="Pqw-uj-x8K"/>
+                            <constraint firstItem="i4D-Mw-99K" firstAttribute="trailing" secondItem="KMP-Jc-uLT" secondAttribute="trailing" constant="16" id="UT5-Pa-Bz0"/>
                             <constraint firstItem="i4D-Mw-99K" firstAttribute="trailing" secondItem="AGK-TI-9Ee" secondAttribute="trailing" constant="16" id="VG6-x0-0EF"/>
                             <constraint firstItem="oBc-DW-gLY" firstAttribute="top" secondItem="zah-gj-zWS" secondAttribute="bottom" constant="26" id="cRO-re-2po"/>
                             <constraint firstItem="KMP-Jc-uLT" firstAttribute="top" secondItem="oBc-DW-gLY" secondAttribute="bottom" constant="36" id="gtc-WX-pqk"/>

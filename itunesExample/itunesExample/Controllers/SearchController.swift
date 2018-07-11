@@ -11,8 +11,9 @@ import Foundation
 class SearchController {
     
     var cache = [String : [SongModel]]()
+    var lastSearch = [SongModel]()
     
-    func loadArticles(keyword:String, completion: @escaping ([SongModel]?, Error?) -> Void) {
+    func searchSongs(keyword:String, completion: @escaping ([SongModel]?, Error?) -> Void) {
         if cache.keys.contains(keyword) {
             completion(cache[keyword], nil)
         }
@@ -20,6 +21,7 @@ class SearchController {
         SongsAPI().searchSong(keyword: keyword) { [weak self] (songs, error) in
             if let songs = songs {
                 self?.cache[keyword] = songs
+                self?.lastSearch = songs
             }
             completion(songs, error)
         }
