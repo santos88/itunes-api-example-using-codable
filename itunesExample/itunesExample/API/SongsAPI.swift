@@ -16,7 +16,15 @@ import Foundation
 
 class SongsAPI {
     
+    static let shared = SongsAPI()
+    
+    var searchTask:URLSessionTask?
+    
     func searchSong(keyword:String, completion: @escaping ([SongModel]?, Error?) -> Void) {
+        
+        if searchTask?.state == URLSessionTask.State.running {
+            searchTask?.cancel()
+        }
         
         guard let searchUrl = generateSearchURL(keyword: keyword) else {
             //TODO improve error message
@@ -28,7 +36,7 @@ class SongsAPI {
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         
-        let task = session.dataTask(with: urlRequest) {
+        searchTask = session.dataTask(with: urlRequest) {
             (data, response, error) in
             guard let data = data else { return }
             
@@ -40,7 +48,7 @@ class SongsAPI {
                 completion(nil, err)
             }
         }
-        task.resume()
+        searchTask?.resume()
         
     }
     

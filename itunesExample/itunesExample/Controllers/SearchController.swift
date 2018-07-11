@@ -17,11 +17,13 @@ class SearchController {
         if cache.keys.contains(keyword) {
             completion(cache[keyword], nil)
         }
-            
-        SongsAPI().searchSong(keyword: keyword) { [weak self] (songs, error) in
+
+        SongsAPI.shared.searchSong(keyword: keyword) { [weak self] (songs, error) in
             if let songs = songs {
-                self?.cache[keyword] = songs
-                self?.lastSearch = songs
+                if songs.count > 0 {
+                    self?.cache[keyword] = songs
+                    self?.lastSearch = songs
+                }
             }
             completion(songs, error)
         }
