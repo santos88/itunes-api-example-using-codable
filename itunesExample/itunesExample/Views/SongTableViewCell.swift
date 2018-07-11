@@ -34,6 +34,7 @@ class SongTableViewCell: UITableViewCell {
         artistLabel.text = nil
         albumImage.image = nil
         // The magic happens here :)
+        // When the cell is going to be reused, the download task is cancelled to avoid troubles.
         imageDownloadTask.cancel()
     }
 }

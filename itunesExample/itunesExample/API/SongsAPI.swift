@@ -21,7 +21,8 @@ class SongsAPI {
     var searchTask:URLSessionTask?
     
     func searchSong(keyword:String, completion: @escaping ([SongModel]?, Error?) -> Void) {
-        
+        // When a new search is triggered, we are cancelling previous searches
+        // to improve performance.
         if searchTask?.state == URLSessionTask.State.running {
             searchTask?.cancel()
         }

@@ -10,6 +10,7 @@ import UIKit
 
 class ImageDownloader {
     
+    // We are passing the URLSessionTask as a parameter to be able to cancel this task from outside if needed
     func getImageFromWeb(downloadTask:inout URLSessionTask, urlString: String?, closure: @escaping (UIImage?) -> ()) {
         guard let urlString = urlString, let url = URL(string: urlString) else {
             return closure(nil)
