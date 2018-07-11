@@ -10,6 +10,8 @@ import UIKit
 
 class SongViewController: UIViewController {
 
+    var imageDownloadTask = URLSessionTask()
+
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var albumLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -22,8 +24,11 @@ class SongViewController: UIViewController {
         songLabel.text = model?.trackName
         albumLabel.text = model?.collectionName
         artistLabel.text = model?.artistName
-
-        // Pending load image
+        ImageDownloader().getImageFromWeb(downloadTask: &imageDownloadTask, urlString:model?.artworkUrl100) {[weak self] (image) in
+            DispatchQueue.main.async {
+                self?.albumPhoto.image = image
+            }
+        }
     }
 
     @IBAction func playPreview(_ sender: Any) {

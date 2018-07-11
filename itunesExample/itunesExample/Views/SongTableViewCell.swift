@@ -10,6 +10,7 @@ import UIKit
 
 class SongTableViewCell: UITableViewCell {
     
+    var imageDownloadTask = URLSessionTask()
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var albumLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -19,12 +20,20 @@ class SongTableViewCell: UITableViewCell {
         songLabel.text = model.trackName
         albumLabel.text = model.collectionName
         artistLabel.text = model.artistName
+        
+        ImageDownloader().getImageFromWeb(downloadTask: &imageDownloadTask, urlString:model.artworkUrl100) {[weak self] (image) in
+            DispatchQueue.main.async {
+                self?.albumImage.image = image
+            }
+        }
     }
     
     override func prepareForReuse() {
         songLabel.text = nil
         albumLabel.text = nil
         artistLabel.text = nil
-
+        albumImage.image = nil
+        // The magic happens here :)
+        imageDownloadTask.cancel()
     }
 }

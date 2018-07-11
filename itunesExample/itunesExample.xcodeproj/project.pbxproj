@@ -21,6 +21,8 @@
 		D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
 		D64A266C20F5799E0019769F /* SongsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266A20F5799E0019769F /* SongsAPI.swift */; };
 		D64A266E20F58F050019769F /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266D20F58F050019769F /* SongTableViewCell.swift */; };
+		D64A267020F5A05B0019769F /* SongsAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A266F20F5A05B0019769F /* SongsAPITest.swift */; };
+		D64A267220F5A5220019769F /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64A267120F5A5220019769F /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D64A266620F579780019769F /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		D64A266A20F5799E0019769F /* SongsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsAPI.swift; sourceTree = "<group>"; };
 		D64A266D20F58F050019769F /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		D64A266F20F5A05B0019769F /* SongsAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsAPITest.swift; sourceTree = "<group>"; };
+		D64A267120F5A5220019769F /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			children = (
 				D64A265120F574190019769F /* itunesExampleTests.swift */,
 				D64A265320F574190019769F /* Info.plist */,
+				D64A266F20F5A05B0019769F /* SongsAPITest.swift */,
 			);
 			path = itunesExampleTests;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				D64A266A20F5799E0019769F /* SongsAPI.swift */,
+				D64A267120F5A5220019769F /* ImageDownloader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			files = (
 				D64A266020F578FF0019769F /* SearchViewController.swift in Sources */,
 				D64A266B20F5799E0019769F /* SongsAPI.swift in Sources */,
+				D64A267220F5A5220019769F /* ImageDownloader.swift in Sources */,
 				D64A266420F579280019769F /* SearchController.swift in Sources */,
 				D64A266E20F58F050019769F /* SongTableViewCell.swift in Sources */,
 				D64A266720F579780019769F /* SongModel.swift in Sources */,
@@ -262,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64A265220F574190019769F /* itunesExampleTests.swift in Sources */,
+				D64A267020F5A05B0019769F /* SongsAPITest.swift in Sources */,
 				D64A266520F5792A0019769F /* SearchController.swift in Sources */,
 				D64A266820F579780019769F /* SongModel.swift in Sources */,
 				D64A266C20F5799E0019769F /* SongsAPI.swift in Sources */,

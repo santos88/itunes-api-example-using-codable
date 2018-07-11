@@ -49,6 +49,18 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goDetail", sender: self)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goDetail" {
+            let vc = segue.destination as! SongViewController
+            if let selectedRow = tableView.indexPathForSelectedRow?.row {
+                vc.model = controller.lastSearch[selectedRow]
+            }
+        }
+    }
 
 }
